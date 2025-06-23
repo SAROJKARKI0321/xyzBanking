@@ -23,11 +23,11 @@ public class T001_customerLoginTest extends BaseTest {
 
 
         WelcomePage welcomePage=new WelcomePage(driver);
-       // Assert.assertEquals(welcomePage.confirmLogin(),testUser);
+        Assert.assertEquals(welcomePage.confirmLogin(),testUser);
 
         logger.debug("Checking the user logged in");
         //fail case
-     Assert.assertEquals(welcomePage.confirmLogin(),"Harry Potter");
+     //Assert.assertEquals(welcomePage.confirmLogin(),"Harry Potter");
 
 
 

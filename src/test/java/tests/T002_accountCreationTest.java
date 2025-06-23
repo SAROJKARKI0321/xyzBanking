@@ -15,9 +15,9 @@ public class T002_accountCreationTest  extends BaseTest {
         bankManagerLoginPage.addCustomer();
         bankManagerLoginPage.OpenAccount();
         String accountFirstName=bankManagerLoginPage.checkAccount();
-        //Assert.assertEquals(accountFirstName,expectedName);
+        Assert.assertEquals(accountFirstName,expectedName);
         //Assumpted fail case
-        Assert.assertEquals(accountFirstName,"");
+        //Assert.assertEquals(accountFirstName,"");
 
 
     }
